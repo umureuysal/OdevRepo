@@ -6,17 +6,11 @@ public class Main {
         double boy=1.72, index;
         int kilo=105;
 
-            System.out.print("Lütfen boyunuzu (metre cinsinde) giriniz: ");
+            System.out.println("Lütfen boyunuzu (metre cinsinde) giriniz: ");
             //boy = input.nextDouble();
-            System.out.print("Lütfen kilonuzu giriniz : ");
+            System.out.println("Lütfen kilonuzu giriniz : ");
             //kilo = input.nextDouble();
 
 
-            index = kilo/boy*boy;
+            index = kilo/Math.pow(boy,2);
             System.out.println("Vücut Kitle İndeksiniz: " + index);
-
-
-
-
-    }
-}
