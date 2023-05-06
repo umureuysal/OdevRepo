@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int armutkilo,elmakilo,domaetskilo,muzilo,patlicankilo;
+        System.out.println("Armut kilo: "+(int)(armutkilo =input.nextInt()));
+        double armuttutar = 2.14*armutkilo;
+        System.out.println("Elma kilo: "+(int)(elmakilo =input.nextInt()));
+        double elmatutar = 3.67*elmakilo;
+        System.out.println("Domates kilo: "+(int)(domaetskilo =input.nextInt()));
+        double domatestutar = domaetskilo*1.11;
+        System.out.println("Muz kilo: "+(int)(muzilo =input.nextInt()));
+        double muztutar = muzilo*0.95;
+        System.out.println("Patlican kilo: "+(int)(patlicankilo =input.nextInt()));
+        double patlicantutar = patlicankilo*5.0;
+        System.out.println("Toplam: "+(double)(armuttutar+elmatutar+domatestutar+muztutar+patlicantutar));
+
+    }
+}
