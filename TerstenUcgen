@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int height = 10;
+
+        for (int row = height; row >= 1; row--) {
+            // Print spaces before the first *
+            for (int i = 0; i < height - row; i++) {
+                System.out.print(" ");
+            }
+            // Print * characters
+            for (int j = 0; j < 2 * row - 1; j++) {
+                System.out.print("*");
+            }
+            // Move to the next line
+            System.out.println();
+        }
+
+
+    }
+
+}
