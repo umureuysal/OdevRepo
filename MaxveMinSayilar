@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Kaç tane sayı gireceksiniz: ");
+        int sayi=sc.nextInt();
+        int max=0;
+        int min=0;
+        for(int i=1;i<=sayi;i++)
+        {
+            System.out.print(i+". sayıyı giriniz: ");
+            int sayi2 = sc.nextInt();
+            if(sayi2>=max)
+                max=sayi2;
+            if(i==1)
+                min=sayi2;
+            else
+                if(sayi2<min)
+                    min=sayi2;
+        }
+        System.out.println("En büyük sayı: "+ max);
+        System.out.println("En küçük sayı: "+ min);
+    }
+}
